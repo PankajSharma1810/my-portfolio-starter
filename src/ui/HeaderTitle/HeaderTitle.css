@@ -1,18 +1,38 @@
+:root {
+  --text-size-desktop: 4rem;
+  --text-size-tablet: 3rem;
+  --text-size-mobile: 2rem;
+  --primary-color: #4ade80; /* Soft green */
+  --secondary-color: #2563eb; /* Deep blue */
+}
+
 .header__title {
   max-width: 100%;
-  max-height: 100%;
+  max-height: 90%;
+  display: block;
+  position: relative;
 }
+
+/* Ensuring the cursor and text elements are clickable */
 .header__title #cursor,
 .header__title #text {
   cursor: pointer;
 }
+
+/* Styling and animating the cursor */
 .header__title #cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
   overflow: visible;
   transform: translate3d(300px, 0, 0) scale(1);
   transform-origin: center center;
   transform-box: fill-box;
   animation: cursor 5s ease infinite alternate;
 }
+
+/* Animation for the cursor movement */
 @keyframes cursor {
   0% {
     opacity: 0;
@@ -26,8 +46,6 @@
     opacity: 1;
     transform: translate3d(-200px, -200px, 0) scale(1);
   }
-
-  /* clique */
   65% {
     opacity: 1;
     transform: translate3d(-200px, -200px, 0) scale(0.95);
@@ -36,9 +54,41 @@
     opacity: 1;
     transform: translate3d(-200px, -200px, 0) scale(1);
   }
-
   100% {
     opacity: 1;
     transform: translate3d(-300px, -50px, 0) scale(1);
+  }
+}
+
+/* Styling the dynamic text */
+.header__title #text text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-anchor: middle;
+  fill: url(#textGradient);
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+
+/* Gradient Text Color */
+#textGradient stop:first-child {
+  stop-color: var(--primary-color);
+}
+
+#textGradient stop:last-child {
+  stop-color: var(--secondary-color);
+}
+
+/* Responsive Font Sizes */
+@media (max-width: 1024px) {
+  .header__title #text text {
+    font-size: var(--text-size-tablet);
+  }
+}
+
+@media (max-width: 768px) {
+  .header__title #text text {
+    font-size: var(--text-size-mobile);
   }
 }

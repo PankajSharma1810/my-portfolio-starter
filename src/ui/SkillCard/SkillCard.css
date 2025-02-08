@@ -1,0 +1,108 @@
+.skill__card {
+    padding: 30px 30px;
+    cursor: pointer;
+    clip-path: var(--polygon);
+    transition: var(--transition);
+    margin: 0 auto; /* Center the card itself horizontally */
+    position: relative; /* Allow positioning of hover effects */
+    overflow: hidden; /* Hide overflow during animation */
+  }
+  
+  
+  
+  .skill__card .title {
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .skill__card .title:hover {
+    transform: translateY(-5px); /* Slightly lift the title on hover */
+    color: var(--color-ui-1); /* Change title color on hover */
+  }
+  
+  .skill__card .skill__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 1rem;
+    justify-items: center; /* Center items in each grid cell */
+    gap: 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .skill__card .skill__content:hover {
+    transform: translateY(-5px); /* Slightly lift the content on hover */
+  }
+  
+  .skill__card .skill__details {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 1rem;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .skill__card .skill__details:hover {
+    transform: translateY(-5px); /* Lift the details slightly on hover */
+    opacity: 0.8; /* Reduce opacity for hover effect */
+  }
+  
+  .skill__card .skill__logo {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s ease;
+  }
+  
+  .skill__card .skill__logo img {
+    object-fit: contain;
+  }
+  
+  .skill__card .skill__logo:hover {
+    transform: scale(1.2); /* Scale up the logo on hover */
+  }
+  
+  .skill__card .skill__details .skill__name {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .skill__card .skill__details .skill__level {
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .skill__card .title {
+      font-size: 30px;
+    }
+    .skill__card .skill__details .skill__name {
+      font-size: 16px;
+    }
+    .skill__card .skill__details .skill__level {
+      font-size: 10px;
+    }
+    .skill__card .skill__content {
+      grid-template-columns: repeat(2, 1fr); /* Stack the content vertically on smaller screens */
+      justify-items: center;
+    }
+  }
+  
+  @media (max-width: 350px) {
+    .skill__card .title {
+      font-size: 20px;
+    }
+    .skill__card .skill__details .skill__name {
+      font-size: 14px;
+    }
+    .skill__card .skill__details .skill__level {
+      font-size: 10px;
+    }
+    .skill__card .skill__content {
+      grid-template-columns: repeat(2, 1fr); /* Stack the content vertically on smaller screens */
+      justify-items: center;
+    }
+  }
+  

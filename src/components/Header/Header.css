@@ -1,0 +1,79 @@
+#header {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  #header .breath__circle {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+  }
+  
+  #header .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    gap: 1rem;
+    z-index: 2;
+  }
+  
+  #header .grid.upper {
+    grid-template-columns: auto 300px;
+  }
+  
+  #header .description {
+    margin-bottom: 10px;
+  }
+  
+  #header .social__handles__container {
+    margin-top: 10px;
+  }
+  
+  #header .profile__photo {
+    object-fit: contain;
+    width: 500px;
+    filter: grayscale(100%);
+    position: relative; /* Ensure positioning */
+    z-index: 10;
+   justify-self: right;
+
+  }
+  
+  .header__title {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 50px; /* Margin-top for spacing */
+  }
+  
+  .header__title .react-icon {
+    font-size: 3rem;
+  }
+  
+  @media (max-width: 768px) {
+    #header .grid,
+    #header .grid.upper {
+      grid-template-columns: 100%;
+    }
+  
+    #header .grid.upper .colun:first-child {
+      height: 200px;
+    }
+  
+    #header .description {
+      text-align: center;
+    }
+  
+    #header .social__handles__container {
+      justify-content: center;
+    }
+  
+    /* Adjust header title for smaller screens */
+    .header__title {
+      font-size: 2rem;
+      margin-top: 30px; /* Reduce margin-top on smaller screens */
+    }
+   
+  }
+  
