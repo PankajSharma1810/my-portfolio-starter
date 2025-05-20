@@ -3,7 +3,6 @@ import "./Header.css";
 import HeaderTitle from "../../ui/HeaderTitle";
 import { profile1 } from "../../assets";
 import CodeBlock from "../../ui/CodeBlock";
-import Facts from "../../ui/Facts/Facts";
 import SocialHandles from "../../ui/SocialHandles";
 import BreathCircle from "../../ui/BreathCircle"
 
@@ -41,8 +40,7 @@ const Header = () => {
               web applications. I specialize in creating seamless user
               experiences, dynamic web pages, and efficient backend services.
               Let's build something amazing together!
-            </p>
-            <Facts/>
+            </p> 
             <SocialHandles/>
           </div>
         </div>

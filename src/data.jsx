@@ -52,7 +52,7 @@ export const projects = [
     category: "Full Stack Project",
     description: "This platform brings all smart devices under one roof...",
     demoLink: "https://vsmarthomes.netlify.app/",
-    githubLink: "https://github.com/SinersSins/SmartHomeManager",
+    githubLink: "https://github.com/PankajSharma1810/SmartHomeManager",
     stacks: [
       { name: "React" },
       { name: "Node.js" },
@@ -66,7 +66,7 @@ export const projects = [
     category: "Full Stack Project",
     description: "A real-time dashboard designed to help users stuck in traffic...",
     demoLink: "https://snack-steer.onrender.com/",
-    githubLink: "https://github.com/SinersSins/Snack-and-Steer",
+    githubLink: "https://github.com/PankajSharma1810/Snack-and-Steer",
     stacks: [
       { name: "ReactJs" },
       { name: "Node.js" },
@@ -81,7 +81,7 @@ export const projects = [
     category: "Frontend Project",
     description: "A web-based platform for managing a personalized movie collection...",
     demoLink: "https://movie-zone-8879.vercel.app/",
-    githubLink: "https://github.com/SinersSins/movie-zone",
+    githubLink: "https://github.com/PankajSharma1810/movie-zone",
     stacks: [
       { name: "React" },
       { name: "CSS" },
@@ -95,7 +95,7 @@ export const projects = [
     category: "Clone App",
     description: "A static web-based clone of the official Puma website...",
     demoLink: "https://prismatic-kleicha-e75940.netlify.app/",
-    githubLink: "https://github.com/SinersSins/puma-clone",
+    githubLink: "https://github.com/PankajSharma1810/puma-clone",
     stacks: [
       { name: "HTML" },
       { name: "CSS" },
@@ -214,7 +214,7 @@ export const skills = [
 export const contactInfo = [
   {
     name: "Email",
-    value: "sinerssins@gmail.com",
+    value: "pankaj.sharma181098@gmail.com",
     link: "https://mail.google.com",
     icon: emailicon,
     btnIcon: <MdOutlineEmail />,
@@ -234,7 +234,7 @@ export const socialHandles = [
   {
     name: "Github",
     icon: <AiFillGithub />,
-    link: "https://github.com/SinersSins",
+    link: "https://github.com/PankajSharma1810",
   },
   {
     name: "LinkedIn",
